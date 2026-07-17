@@ -3,46 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vi elsker Skiben</title>
+    <title>Skiben</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            color: #fff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             min-height: 100vh;
+            margin: 0;
+            padding: 20px;
         }
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            padding: 3rem;
-            border-radius: 25px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        .container {
+            background-color: #1e293b;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
             text-align: center;
             max-width: 500px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid #334155;
         }
         img {
             max-width: 100%;
-            border-radius: 15px;
+            height: auto;
+            border-radius: 12px;
             margin-bottom: 1.5rem;
-            border: 3px solid rgba(255,255,255,0.1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
         }
-        h1 { margin-bottom: 1rem; color: #4ecca3; }
-        p { line-height: 1.6; color: #d1d1d1; margin-bottom: 1.5rem; }
-        .highlight { font-weight: bold; color: #fff; font-size: 1.2em; }
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        p {
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+        }
+        .footer-text {
+            font-weight: bold;
+            color: #facc15;
+            font-size: 1.1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #334155;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <!-- Husk å bytte navn her hvis du lagrer bildet med et annet navn -->
-        <img src="skiben.png" alt="Skiben">
+
+    <div class="container">
+        <img src="skiben.png.png" alt="Skiben">
         <h1>Vi elsker Skiben</h1>
-        <p>Vi skulle ønske vi kunne ha Skiben på vår server. Han er en enormt rå streamer, men vi har dessverre ikke nok upload på vår server til å få han på nett, så dette overlater vi til datasentre som har nok kapasitet.</p>
-        <p class="highlight">Vi elsker hvert tonn av deg, Skiben!</p>
+        <p>Vi skulle ønske vi kunne ha Skiben på vår server. Han er en enormt rå streamer, men vi har dessverre ikke nok upload på vår server til å få han på nett, så dette overlater vi til datasentre som har nok upload.</p>
+        <p class="footer-text">Vi elsker hvert tonn av deg, Skiben!</p>
     </div>
+
 </body>
 </html>
