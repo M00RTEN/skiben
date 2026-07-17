@@ -2,49 +2,47 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vi elsker Skiben</title>
     <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            margin: 0;
-            padding: 20px;
         }
-        .container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 25px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
             text-align: center;
-            max-width: 600px;
+            max-width: 500px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         img {
             max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            border: 3px solid rgba(255,255,255,0.1);
         }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #555;
-            line-height: 1.6;
-            font-size: 1.1em;
-        }
+        h1 { margin-bottom: 1rem; color: #4ecca3; }
+        p { line-height: 1.6; color: #d1d1d1; margin-bottom: 1.5rem; }
+        .highlight { font-weight: bold; color: #fff; font-size: 1.2em; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://imgur.com/SqoZSXL" alt="Skiben">
+    <div class="card">
+        <!-- Husk å bytte navn her hvis du lagrer bildet med et annet navn -->
+        <img src="skiben.png" alt="Skiben">
         <h1>Vi elsker Skiben</h1>
-        <p>Vi skulle ønske vi kunne ha Skiben på vår server, han er en enormt rå streamer, men vi har dessverre ikke nok Upload på vår server til å få han på nett, så dette overlater vi til datasentre som har nok upload.</p>
-        <p><strong>Vi elsker hvert tonn av deg Skiben!</strong></p>
+        <p>Vi skulle ønske vi kunne ha Skiben på vår server. Han er en enormt rå streamer, men vi har dessverre ikke nok upload på vår server til å få han på nett, så dette overlater vi til datasentre som har nok kapasitet.</p>
+        <p class="highlight">Vi elsker hvert tonn av deg, Skiben!</p>
     </div>
 </body>
 </html>
